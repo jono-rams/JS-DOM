@@ -1,16 +1,11 @@
-const para = document.querySelector('p');
-const para = document.querySelector('.error');
-const para = document.querySelector('div.error');
-const para = document.querySelector('body > h1');
+// get an element by ID
+const title = document.getElementById('page-title');
+console.log(title);
 
-console.log(para);
+// get elements by their class name
+const errors = document.getElementsByClassName('error');
+console.log(errors);
 
-const paras = document.querySelectorAll('p');
-
+// get elements by their tag name
+const paras = document.getElementsByTagName('p');
 console.log(paras);
-console.log(paras[2]);
-
-paras.forEach(para => {
-    console.log(para);
-})
-
