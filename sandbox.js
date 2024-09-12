@@ -1,24 +1,11 @@
-const para = document.querySelector('p');
+const link = document.querySelector('a');
 
-console.log(para.innerText);
+console.log(link.getAttribute('href'));
 
-para.innerText = 'Ninjas are awesome';
+link.setAttribute('href', 'https://www.thenetninja.co.uk');
+link.innerText = "The NetNinja Website";
 
-const paras = document.querySelectorAll('p');
-
-paras.forEach((p) => {
-    console.log(p.innerText);
-    p.innerText += ' new text';
-});
-
-const content = document.querySelector('.content');
-
-console.log(content.innerHTML);
-
-content.innerHTML += '<h2>New Heading</h2>';
-
-const people = ['mario', 'luigi', 'yoshi'];
-
-people.forEach(person => {
-    content.innerHTML += `<p>${person}</p>`;
-});
+const mssg = document.querySelector('p');
+console.log(mssg.getAttribute('class'));
+mssg.setAttribute('class', 'success');
+mssg.setAttribute('style', 'color: green;');
